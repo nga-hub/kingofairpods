@@ -21,25 +21,59 @@ nav a{text-decoration:none;color:#222;font-size:11px;font-weight:bold}
 .pink{background:linear-gradient(120deg,#ffe5e9,#f4aeba)}
 .blue{background:linear-gradient(120deg,#e4f0ff,#91baf1)}
 
-.banner-content{position:relative;z-index:2;width:58%}
-.banner small{font-size:10px;font-weight:bold}
-.banner h1{font-size:38px;margin:12px 0;color:#df2445}
-.blue h1{color:#1768bd}
-.banner p{font-size:11px;line-height:1.5}
-.banner button{border:0;border-radius:20px;padding:9px 16px;background:#df2445;color:white;font-size:10px}
-.blue button{background:#1768bd}
+
+.banner-content{
+    position:relative;
+    z-index:2;
+    width:64%;
+}
+
+.banner small{
+    font-size:10px;
+    font-weight:bold;
+}
+
+.banner h1{
+    font-size:clamp(25px, 7.5vw, 34px);
+    margin:12px 0;
+    color:#df2445;
+    white-space:nowrap;
+}
+
+.blue h1{
+    color:#1768bd;
+}
+
+.banner p{
+    font-size:11px;
+    line-height:1.5;
+}
+
+.banner button{
+    border:0;
+    border-radius:20px;
+    padding:9px 16px;
+    background:#df2445;
+    color:white;
+    font-size:10px;
+}
+
+.blue button{
+    background:#1768bd;
+}
 
 .art{
     position:absolute;
-    width:34%;
-    height:72%;
+    width:32%;
+    height:68%;
     max-width:170px;
-    right:12px;
+    right:10px;
     bottom:10px;
     object-fit:contain;
     z-index:1;
     pointer-events:none;
 }
+
 
 section{padding:15px}
 h2{font-size:15px;margin-bottom:13px}
