@@ -92,8 +92,10 @@ footer{text-align:center;background:#222;color:white;padding:25px;font-size:10px
 
     <div class="banner-content">
         <small>SPECIAL PROMOTION</small>
-        <h1 id="title">5% 할인</h1>
-        <p id="description">지금 구매하면<br>놓치지 마세요!</p>
+        <h1 id="title">20,000원 쿠폰</h1>
+<p id="description">
+    구매 시 사용 가능한<br>할인 쿠폰 증정!
+</p>
         <button onclick="goToAirPods4()">쇼핑하기</button>
     </div>
 
@@ -202,18 +204,33 @@ function goToAirPods4() {
 }
 
 // Change banner
+
 function changeBanner(n) {
     const banner = document.getElementById("banner");
     const art = document.getElementById("art");
 
     if (n === 0) {
+        // Banner A: 20,000 won coupon
         banner.className = "banner pink";
 
-        document.getElementById("title").innerText = "5% 할인";
+        document.getElementById("title").innerText = "20,000원 쿠폰";
         document.getElementById("description").innerHTML =
-            "지금 구매하면<br>놓치지 마세요!";
+            "구매 시 사용 가능한<br>할인 쿠폰 증정!";
 
-        art.src = "./images/airpods4-pink.png";
+        art.src = "./images/20k-coupon.png";
+
+    } else {
+        // Banner B: Free AirPods case gift
+        banner.className = "banner blue";
+
+        document.getElementById("title").innerText = "케이스 증정";
+        document.getElementById("description").innerHTML =
+            "20,000원 상당의<br>에어팟 케이스 무료 증정!";
+
+        art.src = "./images/airpods-case-gift.png";
+    }
+}
+
 
     } else {
         banner.className = "banner blue";
