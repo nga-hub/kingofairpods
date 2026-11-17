@@ -232,17 +232,6 @@ function changeBanner(n) {
 }
 
 
-    } else {
-        banner.className = "banner blue";
-
-        document.getElementById("title").innerText = "무료배송";
-        document.getElementById("description").innerHTML =
-            "지금 주문하고<br>배송비 부담 없이!";
-
-        art.src = "./images/airpods-case-gift.png";
-    }
-}
-
 // Random A/B assignment
 function assignABTest() {
     let variant = localStorage.getItem("shopmate_ab_variant");
